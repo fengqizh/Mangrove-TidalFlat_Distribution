@@ -32,7 +32,7 @@ pred_set$loss_prev = prev_loss
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 plot(PredRas_thr)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2022ssp5.tif")
 
@@ -68,7 +68,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2025ssp5.tif",overwrite = T)
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -106,7 +106,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2028ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -145,7 +145,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2031ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -182,7 +182,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2034ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -230,7 +230,7 @@ pred_set$sealevel= sealevel
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2037ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -266,7 +266,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2040ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -302,7 +302,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2043ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -338,7 +338,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2046ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -376,7 +376,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2049ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -414,7 +414,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2052ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -451,7 +451,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2055ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -490,7 +490,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2058ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -529,7 +529,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2061ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -567,7 +567,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2064ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -605,7 +605,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2067ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -642,7 +642,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2070ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -679,7 +679,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2073ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -716,7 +716,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2076ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -753,7 +753,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2079ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -789,7 +789,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2082ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -826,7 +826,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr ,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2085ssp5.tif")
 
 mangrove = focal(PredRas_thr , w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -862,7 +862,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2088ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -898,7 +898,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2091ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -936,7 +936,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2094ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -973,7 +973,7 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2097ssp5.tif")
 
 mangrove = focal(PredRas_thr, w = matrix(1,11,11), fun = mean, na.rm = T, expand = F)
@@ -1009,7 +1009,8 @@ pred_set$loss_prev = prev_loss
 
 names(pred_set)[names(pred_set) == "Regulatory_Quality"] <- "rq"
 PredRas = predict(pred_set,RFmodel,na.rm=T)
-PredRas_thr = ifel(PredRas < 0.47, 0, PredRas)
+PredRas_thr = ifel(PredRas < 0.46, 0, PredRas)
 writeRaster(PredRas_thr,"F:/mangrove_data/Prediction_results/ssp5_result/mangrove_2100ssp5.tif")
+
 
 
